@@ -1,0 +1,46 @@
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .container ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav .container .icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.modal {
+  margin-left: 1260px;
+  margin-top: 50px;
+  align-content: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.modal .modalForm {
+  width: 253px;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  font-size: 19px;
+  border-radius: 15px;
+  border: 1px solid gray;
+}
+
+.modal .modalForm h4 {
+  margin-bottom: 10px;
+  text-align: start;
+  font-size: 17px;
+  cursor: pointer;
+}

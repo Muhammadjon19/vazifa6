@@ -1,0 +1,22 @@
+.login .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login .container .soz button{
+    padding: 10px 30px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.login .container .soz .li{
+    display: flex;
+    align-items: center;
+}
+
+.login .container .soz .li h4{
+    cursor: pointer;
+}

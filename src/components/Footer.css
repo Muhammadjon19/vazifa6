@@ -1,0 +1,21 @@
+footer{
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .container .neymar{
+    display: flex;
+    align-items: center;
+    gap: 250px;
+}
+
+footer .container .neymar .b h6{
+    font-size: 16px;
+}
