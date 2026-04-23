@@ -5,6 +5,8 @@ import "./Navbar.css";
 import Login from "./login/Login";
 import { VscAccount } from "react-icons/vsc";
 import Card1 from "./card1/Card1";
+import Card2 from "./card2/Card2";
+import Card5 from "./card5/Card5";
 function Navbar() {
   const [modal, setModal] = useState(false);
   return (
@@ -29,16 +31,12 @@ function Navbar() {
       <nav>
         <div className="container">
           <div className="logo">
-            <img src="./public/Logo.png" alt="" />
+            <img src="./imgs/Logo.png" alt="" />
           </div>
           <ul>
             <Link to={"/"}>Home</Link>
-            <li>
-              <a href="">Contact</a>
-            </li>
-            <li>
-              <a href="">About</a>
-            </li>
+            <Link to={"/about"}>About</Link>
+            <Link to={"/contact"}>Contact</Link>
             <li>
               <Login />
             </li>
@@ -49,11 +47,13 @@ function Navbar() {
                 setModal(true);
               }}
             />
-            <FaHeart />
-            <FaShoppingCart />
+            <Card2 />
+            <Card5/>
           </div>
         </div>
       </nav>
+      <hr />
+      <br />
     </>
   );
 }

@@ -1,0 +1,45 @@
+.contact .container .cards .card .box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact .container .cards{
+    box-shadow: 2px 2px 10px gray;
+    padding: 80px 20px;
+    width: 300px;
+}
+.contact .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .container .pedri{
+    box-shadow: 2px 2px 10px gray;
+    padding: 80px 20px;
+}
+
+.contact .container .pedri .gavi{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact .container .pedri .gavi input{
+    padding: 10px 30px;
+}
+
+.contact .container .pedri input{
+    padding: 50px 276px;
+    margin-top: 40px;
+}
+
+.contact .container .pedri button{
+    padding: 10px 30px;
+    background-color: rgb(128, 4, 4);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 567px;
+}

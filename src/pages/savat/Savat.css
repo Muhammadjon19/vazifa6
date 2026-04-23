@@ -1,0 +1,87 @@
+.savat .container .ol {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 2px 10px rgb(218, 218, 218);
+  padding: 20px;
+}
+
+.savat .container .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 2px 10px rgb(218, 218, 218);
+  padding: 10px 20px;
+  margin-top: 30px;
+}
+
+.savat .container .card .fede {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.savat .container .button {
+  margin-top: 30px;
+}
+
+.savat .container .button {
+  padding: 10px 20px;
+}
+
+.savat .container .btnss .btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.savat .container .btnss .btns input {
+  padding: 10px 20px;
+}
+
+.savat .container .btnss .btns button {
+  padding: 10px 20px;
+  background-color: rgb(137, 4, 4);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.savat .container .btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.savat .container .btn button {
+  padding: 10px 20px;
+}
+
+.savat .container .btnss {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.savat .container .btne {
+  border: 2px solid black;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.savat .container .btne .d{
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    margin-top: 20px;
+}
+
+.savat .container .btne button{
+    padding: 10px 40px;
+    background-color: rgb(137, 4, 4);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}

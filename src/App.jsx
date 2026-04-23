@@ -13,6 +13,13 @@ import Acount from "./pages/acount/Acount";
 import Card1 from "./components/card1/Card1";
 import Card2 from "./components/card2/Card2";
 import Washlist from "./pages/washlist/Washlist";
+import Savat from "./pages/savat/Savat";
+import Card5 from "./components/card5/Card5";
+import Card6 from "./components/card6/Card6";
+import Chekout from "./pages/chekout/Chekout";
+import Slider from "./components/slider/Slider";
+import About from "./pages/about/About";
+import Contact from "./pages/contact/Contact";
 
 function App() {
   return (
@@ -31,6 +38,13 @@ function App() {
           <Route path="/card1" element={<Card1 />} />
           <Route path="/card2" element={<Card2 />} />
           <Route path="/washlist" element={<Washlist />} />
+          <Route path="/savat" element={<Savat />} />
+          <Route path="/card5" element={<Card5 />} />
+          <Route path="/card6" element={<Card6 />} />
+          <Route path="/chekout" element={<Chekout />} />
+          <Route path="/slider" element={<Slider />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </BrowserRouter>

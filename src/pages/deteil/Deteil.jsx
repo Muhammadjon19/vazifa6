@@ -7,7 +7,7 @@ function Deteil() {
       <div className="login">
         <div className="container">
           <div className="w">
-            <img src="./public/login.png" alt="" />
+            <img src="./imgs/login.png" alt="" />
           </div>
           <div className="soz">
             <h1>Create an account</h1>

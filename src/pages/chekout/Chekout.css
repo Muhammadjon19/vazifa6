@@ -1,0 +1,86 @@
+.chekout .container .card input {
+  padding: 8px 50px;
+}
+.chekout .container {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+
+.chekout .container .card h5 {
+  color: gray;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.chekout .container .pol {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.chekout .container .pol h4 {
+  font-size: 11px;
+}
+.chekout .container .pol img {
+  width: 20px;
+}
+
+.chekout .container .cards {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.chekout .container .cards .img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chekout .container .cards {
+  margin-bottom: 20px;
+}
+
+.d {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+  margin-top: 20px;
+}
+.ran .h5 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.ran .h5 h5 {
+  margin-bottom: 10px;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.btns input {
+  padding: 10px 20px;
+}
+
+.btns button {
+  padding: 10px 20px;
+  background-color: rgb(137, 4, 4);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.ran .as {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: rgb(137, 4, 4);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}

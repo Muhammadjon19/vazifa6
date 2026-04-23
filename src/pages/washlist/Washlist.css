@@ -1,0 +1,18 @@
+.gap .container .uu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.gap .container .uu button {
+  padding: 10px 20px;
+} 
+.gap  .container .section1 .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}

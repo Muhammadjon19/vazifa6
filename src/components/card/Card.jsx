@@ -5,7 +5,7 @@ function Card() {
   return (
     <>
       <Link to={"bosilish"} className="card">
-        <img src="./public/b.png" alt="" />
+        <img src="./imgs/b.png" alt="" />
         <h3>HAVIT HV-G92 Gamepad</h3>
         <h4>$120</h4>
         ⭐⭐⭐⭐⭐ (88)

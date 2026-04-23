@@ -1,0 +1,42 @@
+
+.swiper {
+  width: 100%;
+  height: 50vh;
+}
+
+.swiper-slide {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide .sen{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.swiper-slide .sen .kil img{
+    width: 30px;
+}
+
+.swiper-slide .sen .kil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.swiper-slide .sen h1{
+    margin-bottom: 20px;
+}
+

@@ -8,19 +8,19 @@ function Bosilish() {
         <div className="container">
           <div className="kill">
             <div className="pedri">
-              <img src="./public/m.png" alt="" />
+              <img src="./imgs/m.png" alt="" />
               <br />
               <br />
-              <img src="./public/m.png" alt="" />
+              <img src="./imgs/m.png" alt="" />
               <br />
               <br />
-              <img src="./public/m.png" alt="" />
+              <img src="./imgs/m.png" alt="" />
               <br />
               <br />
-              <img src="./public/m.png" alt="" />
+              <img src="./imgs/m.png" alt="" />
             </div>
             <div className="x">
-              <img src="./public/mu.png" alt="" />
+              <img src="./imgs/mu.png" alt="" />
             </div>
           </div>
           <div className="men">
@@ -45,25 +45,25 @@ function Bosilish() {
           <h1>Explore Our Products</h1>
           <div className="cards">
             <div className="card">
-              <img src="./public/b.png" alt="" />
+              <img src="./imgs/b.png" alt="" />
               <h3>HAVIT HV-G92 Gamepad</h3>
               <h4>$120</h4>
               ⭐⭐⭐⭐⭐ (88)
             </div>
             <div className="card">
-              <img src="./public/b.png" alt="" />
+              <img src="./imgs/b.png" alt="" />
               <h3>HAVIT HV-G92 Gamepad</h3>
               <h4>$120</h4>
               ⭐⭐⭐⭐⭐ (88)
             </div>
             <div className="card">
-              <img src="./public/b.png" alt="" />
+              <img src="./imgs/b.png" alt="" />
               <h3>HAVIT HV-G92 Gamepad</h3>
               <h4>$120</h4>
               ⭐⭐⭐⭐⭐ (88)
             </div>
             <div className="card">
-              <img src="./public/b.png" alt="" />
+              <img src="./imgs/b.png" alt="" />
               <h3>HAVIT HV-G92 Gamepad</h3>
               <h4>$120</h4>
               ⭐⭐⭐⭐⭐ (88)
