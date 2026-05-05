@@ -40,6 +40,10 @@ main .container .section1 .cards .card {
 main .container .section1 .cards .card img {
   width: 100%;
 }
+
+main .container .section1 .cards .card h4{
+  color: red;
+}
 main .container .section1 .cards .card h3 {
   width: 250px;
 }
