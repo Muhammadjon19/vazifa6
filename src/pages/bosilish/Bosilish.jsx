@@ -1,6 +1,5 @@
 import React from "react";
 import "./Bosilish.css";
-import Card from "../../components/card/Card";
 function Bosilish() {
   return (
     <>
@@ -38,7 +37,6 @@ function Bosilish() {
           </div>
         </div>
       </div>
-
       <div className="container">
         <div className="section4">
           <h2>Our Products</h2>

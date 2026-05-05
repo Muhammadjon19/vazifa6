@@ -1,17 +1,10 @@
 import React, { useRef, useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 import "./Slider.css";
-
-// import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-
 export default function Slider() {
   return (
     <>
@@ -27,8 +20,7 @@ export default function Slider() {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
-      >
+        className="mySwiper">
         <SwiperSlide>
           <div className="sen">
             <div className="soz">

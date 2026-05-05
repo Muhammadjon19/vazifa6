@@ -20,3 +20,9 @@
 .login .container .soz .li h4{
     cursor: pointer;
 }
+
+
+.login .container .soz input{
+    padding: 8px 30px;
+    border: none;
+}

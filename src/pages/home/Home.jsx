@@ -1,25 +1,25 @@
-import React from "react";
+import React, { createContext, useContext } from "react";
 import "./Home.css";
-import Card from "../../components/card/Card";
 import Slider from "../../components/slider/Slider";
+import { DataContext } from "../../App";
+import { baseUrl } from "../../services";
 function Home() {
+  const { categoryData } = useContext(DataContext);
+  const { productData } = useContext(DataContext);
+  console.log(productData);
+
   return (
     <>
       <div className="hero">
         <div className="heroInfo">
           <div className="container">
             <div className="info">
-              <h3>Woman’s Fashion</h3>
-              <h3>Woman’s Fashion</h3>
-              <h3>Woman’s Fashion</h3>
-              <h3>Woman’s Fashion</h3>
-              <h3>Woman’s Fashion</h3>
-              <h3>Woman’s Fashion</h3>
-              <h3>Woman’s Fashion</h3>
-              <h3>Woman’s Fashion</h3>
-              <h3>Woman’s Fashion</h3>
+              {categoryData?.map((item) => {
+                return <h3>{item?.title}</h3>;
+                <img src={item?.image} alt="" />;
+              })}
             </div>
-            <Slider/>
+            <Slider />
           </div>
         </div>
       </div>
@@ -30,30 +30,16 @@ function Home() {
             <h2>Today’s</h2>
             <h1>Flash Sales</h1>
             <div className="cards">
-              <div className="card">
-                <img src="./imgs/b.png" alt="" />
-                <h3>HAVIT HV-G92 Gamepad</h3>
-                <h4>$120</h4>
-                ⭐⭐⭐⭐⭐ (88)
-              </div>
-              <div className="card">
-                <img src="./imgs/b.png" alt="" />
-                <h3>HAVIT HV-G92 Gamepad</h3>
-                <h4>$120</h4>
-                ⭐⭐⭐⭐⭐ (88)
-              </div>
-              <div className="card">
-                <img src="./imgs/b.png" alt="" />
-                <h3>HAVIT HV-G92 Gamepad</h3>
-                <h4>$120</h4>
-                ⭐⭐⭐⭐⭐ (88)
-              </div>
-              <div className="card">
-                <img src="./imgs/b.png" alt="" />
-                <h3>HAVIT HV-G92 Gamepad</h3>
-                <h4>$120</h4>
-                ⭐⭐⭐⭐⭐ (88)
-              </div>
+              {productData?.slice(0, 4).map((item) => {
+                return (
+                  <div className="card">
+                    <img src={`${baseUrl}${item?.pictures[0]}`} alt="" />
+                    <h3>{item?.title.slice(0, 25)}</h3>
+                    <h4>{item?.price}</h4>
+                    ⭐⭐⭐⭐⭐ (88)
+                  </div>
+                );
+              })}
             </div>
             <button>View All Products</button>
           </div>
@@ -64,72 +50,35 @@ function Home() {
             <h2>Categories</h2>
             <h1>Browse By Category</h1>
             <div className="cards">
-              <div className="card">
-                <img src="./imgs/s.svg" alt="" />
-                <h3>Phones</h3>
-              </div>
-              <div className="card">
-                <img src="./imgs/s.svg" alt="" />
-                <h3>Phones</h3>
-              </div>
-              <div className="card">
-                <img src="./imgs/s.svg" alt="" />
-                <h3>Phones</h3>
-              </div>
-              <div className="card">
-                <img src="./imgs/s.svg" alt="" />
-                <h3>Phones</h3>
-              </div>
-              <div className="card">
-                <img src="./imgs/s.svg" alt="" />
-                <h3>Phones</h3>
-              </div>
-              <div className="card">
-                <img src="./imgs/s.svg" alt="" />
-                <h3>Phones</h3>
-              </div>
-              <div className="card">
-                <img src="./imgs/s.svg" alt="" />
-                <h3>Phones</h3>
-              </div>
-              <div className="card">
-                <img src="./imgs/s.svg" alt="" />
-                <h3>Phones</h3>
-              </div>
+              {categoryData?.map((item) => {
+                return (
+                  <div className="card">
+                    <img src={item?.image} alt="" />
+                    <h3>{item?.title}</h3>
+                  </div>
+                );
+              })}
             </div>
           </div>
           <br />
           <hr />
           <br />
           <div className="section1">
-            <h2>This Month</h2>
-            <h1>Best Selling Products</h1>
+            <h2>Today’s</h2>
+            <h1>Flash Sales</h1>
             <div className="cards">
-              <div className="card">
-                <img src="./imgs/b.png" alt="" />
-                <h3>HAVIT HV-G92 Gamepad</h3>
-                <h4>$120</h4>
-                ⭐⭐⭐⭐⭐ (88)
-              </div>
-              <div className="card">
-                <img src="./imgs/b.png" alt="" />
-                <h3>HAVIT HV-G92 Gamepad</h3>
-                <h4>$120</h4>
-                ⭐⭐⭐⭐⭐ (88)
-              </div>
-              <div className="card">
-                <img src="./imgs/b.png" alt="" />
-                <h3>HAVIT HV-G92 Gamepad</h3>
-                <h4>$120</h4>
-                ⭐⭐⭐⭐⭐ (88)
-              </div>
-              <div className="card">
-                <img src="./imgs/b.png" alt="" />
-                <h3>HAVIT HV-G92 Gamepad</h3>
-                <h4>$120</h4>
-                ⭐⭐⭐⭐⭐ (88)
-              </div>
+              {productData?.slice(0, 4).map((item) => {
+                return (
+                  <div className="card">
+                    <img src={`${baseUrl}${item?.pictures[0]}`} alt="" />
+                    <h3>{item?.title.slice(0, 25)}</h3>
+                    <h4>{item?.price}</h4>
+                    ⭐⭐⭐⭐⭐ (88)
+                  </div>
+                );
+              })}
             </div>
+            <button>View All Products</button>
           </div>
           <div className="section3">
             <div className="key">
@@ -147,20 +96,40 @@ function Home() {
               <img src="./imgs/o.png" alt="" />
             </div>
           </div>
-          <div className="section4">
-            <h2>Our Products</h2>
-            <h1>Explore Our Products</h1>
+          <div className="section1">
+            <h2>Today’s</h2>
+            <h1>Flash Sales</h1>
             <div className="cards">
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
+              {productData?.slice(0, 8).map((item) => {
+                return (
+                  <div className="card">
+                    <img src={`${baseUrl}${item?.pictures[0]}`} alt="" />
+                    <h3>{item?.title.slice(0, 25)}</h3>
+                    <h4>{item?.price}</h4>
+                    ⭐⭐⭐⭐⭐ (88)
+                  </div>
+                );
+              })}
             </div>
             <button>View All Products</button>
+          </div>
+
+          <div className="section6">
+            <h3>New Arrival</h3>
+            <div className="cards">
+              <div className="card">
+                <img src="./imgs/123.png" alt="" />
+              </div>
+              <div className="imgss">
+                <div className="img">
+                  <img src="./imgs/124.png" alt="" />
+                </div>
+                <div className="imgs">
+                  <img src="./imgs/125.png" alt="" />
+                  <img src="./imgs/126.png" alt="" />
+                </div>
+              </div>
+            </div>
           </div>
           <div className="section5">
             <div className="cards">
